@@ -3,7 +3,7 @@ import { Todo } from "./models/Todo";
 
 const todo1 = new Todo(
   "Träna på gymmet i 45 minuter",
-  "Sunt magna proident laborum incididunt minim esse pariatur minim aliqua.",
+  "Sunt magna proident laborum incididunt minim esse pariatur minim aliqua minim consectetur.",
   "2023-11-17",
   "2023-12-01",
   "Liam Andersson"

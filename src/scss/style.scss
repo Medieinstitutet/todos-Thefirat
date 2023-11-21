@@ -1,73 +1,71 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.app-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+.todo-container {
+  background-color: beige;
 }
 
-.todo-section,
-.done-section {
-  width: 45%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-h2 {
+.todo-title {
   text-align: center;
+  font-size: 32px;
+  color: cornflowerblue;
+}
+
+#todoSectn {
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
+  border: 1px dashed black;
+  margin: 10px;
+  border-radius: 20px;
 }
 
 li {
-  margin-bottom: 8px;
+  list-style: none;
+  font-size: 24px;
+  color: darkcyan;
 }
 
-
-
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #DAC0A3;
+  padding: 10px 20px;
+  margin-left: 40%;
+  background-color: darkcyan;
+  color: #03e9f4;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 5px;
+  overflow: hidden;
+  transition: 0.5s;
   cursor: pointer;
-  transition: border-color 0.25s;
-  color: #0F2C59;
-
 }
 
 button:hover {
-  border-color: #706233;
+  background: greenyellow;
+  color: whitesmoke;
+  box-shadow: 0 0 5px salmon,
+    0 0 25px sandybrown,
+    0 0 50px seagreen,
+    0 0 200px silver;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, seagreen);
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-.todo-container {
-  display: flex;
-  flex-direction: column;
+.done-title {
   text-align: center;
+  font-size: 32px;
+  color: red;
+}
+
+#doneSectn {
+  display: flex;
+  flex-direction: row;
 }
 
 .done-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
+  background-color: #EEF296;
 }
