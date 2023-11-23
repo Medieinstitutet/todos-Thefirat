@@ -33,10 +33,10 @@ const todo4 = new Todo(
 
 let todos = [todo1, todo2, todo3, todo4];
 let doneTodos = [];
-if (localStorage.getItem(todos)) {
+if (localStorage.getItem("todos")) {
   todos = JSON.parse(localStorage.getItem("arrayTodos"));
 }
-if (localStorage.getItem(doneTodos)) {
+if (localStorage.getItem("arrayDone")) {
   doneTodos = JSON.parse(localStorage.getItem("arrayDone"));
 }
 
@@ -66,7 +66,7 @@ const createHtml = () => {
 
     moveToDoneButton.addEventListener("click", () => {
       doneTodos.push(todo);
-      todos = todos.filter((item, index) => index !== i);
+      todos = todos.filter((e, index) => index !== i);
       createHtml();
     });
 
@@ -98,7 +98,7 @@ const createHtml = () => {
 
     undoButton.addEventListener("click", () => {
       todos.push(doneTodo);
-      doneTodos = doneTodos.filter((item, index) => index !== i);
+      doneTodos = doneTodos.filter((e, index) => index !== i);
       createHtml();
     });
 
