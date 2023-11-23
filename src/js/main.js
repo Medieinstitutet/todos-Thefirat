@@ -57,6 +57,7 @@ const createHtml = () => {
     const liList4 = document.createElement("li");
     const liList5 = document.createElement("li");
     const moveToDoneButton = document.createElement("button");
+    moveToDoneButton.className = "btn btn-danger p-3";
 
     liList.innerHTML = todo.name;
     liList2.innerHTML = todo.description;
